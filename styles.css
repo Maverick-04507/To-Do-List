@@ -1,0 +1,107 @@
+.poppins-regular {
+    font-family: "Poppins Cursive", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins Cursive','sans-serif';
+}
+.container{
+    width: 100%;
+    min-height: 300vh;
+    background: black;  
+}
+.To-do{
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(50%);
+    box-shadow: 0 0 1rem aqua,
+    0 0 2rem aqua,
+    0 0 2.5rem aqua;
+
+
+}
+h2 img{
+    height: 2rem;
+}
+.To-do h2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#edeef0 ;
+    border-radius: 30px;
+    padding: 1rem;
+}
+.To-do input{
+    flex: 1;
+    background: transparent;
+    outline: none;
+    border: none;
+    padding: .5rem;
+    font-weight: 100;
+}
+.To-do button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: aqua;
+    border-radius: 40px;
+    color: rgb(7, 7, 87);
+    font-weight: bolder;
+    font-size: 1rem;
+    padding: 16px 50px;
+}
+.container ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 18px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+.container ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("./images/unchecked.png");
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ ul li.checked{
+    color:#555 ;
+    text-decoration: line-through;
+
+ }
+ ul li.checked::before{
+    background-image: url(./images/checked.png);
+ }
+ul li span{
+    position: absolute;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    line-height: 25px;
+    font-size: 22px;
+    color: #555;
+    text-align: center;
+    border-radius: 50%;
+}
