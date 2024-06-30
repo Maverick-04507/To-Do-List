@@ -12,8 +12,9 @@
 }
 .container{
     width: 100%;
-    min-height: 300vh;
-    background: black;  
+    background: url("./images/bg1.png");  
+    background-size: cover;
+    min-height: 100vh;
 }
 .To-do{
     width: 100%;
@@ -21,14 +22,17 @@
     background: white;
     padding: 40px 30px 70px;
     border-radius: 10px;
+    border: solid 0.5rem aquamarine;
+    border-style: groove;
     margin-left: auto;
     margin-right: auto;
-    transform: translateY(50%);
-    box-shadow: 0 0 1rem aqua,
-    0 0 2rem aqua;
-
-
+    transition: 0.5s all ease-in-out;
+    transform: translateY(40%);
+    /* box-shadow: 0 0 1rem aqua,
+    0 0 2rem aqua,
+    0 0 2.5rem aqua; */
 }
+
 h2 img{
     height: 2rem;
 }
